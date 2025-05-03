@@ -1,0 +1,41 @@
+<section class="flex h-screen bg-gray-900">
+
+    <!-- Sidebar -->
+    <aside class=" w-48 hover:w-64 transition-all duration-150 ease-in bg-gray-800 text-white p-4 space-y-4">
+        <div class="flex items-center space-x-2">
+            <img src="assets/images/bg.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+            <span class="font-bold ">John Doe</span>
+        </div>
+        <a href="#" class="block p-2 hover:bg-gray-700 rounded">Item 1</a>
+        <a href="#" class="block p-2 hover:bg-gray-700 rounded">Item 2</a>
+        <a href="#" class="block p-2 hover:bg-gray-700 rounded">Item 3</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <!-- Search Bar -->
+        <div class="flex mb-6">
+            <input type="text" placeholder="Search though your activities" class="flex-1 p-2 border rounded-bl-md">
+            <button class="p-2 bg-blue-500 text-white rounded-tr-lg hover:bg-blue-600">Search</button>
+        </div>
+
+        <!-- Auto-Wrapping Grid -->
+        <div class="grid grid-cols-auto gap-4">
+            <div class="bg-white p-4 shadow rounded w-48 h-32">Item</div>
+            <div class="bg-white p-4 shadow rounded w-48 h-32">Item</div>
+            <div class="bg-white p-4 shadow rounded w-48 h-32">Item</div>
+            <div class="bg-white p-4 shadow rounded w-48 h-32">Item</div>
+            <div class="bg-white p-4 shadow rounded w-48 h-32">Item</div>
+        </div>
+    </main>
+
+    <style>
+        /* Auto grid with left alignment */
+        .grid-cols-auto {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
+
+</section>

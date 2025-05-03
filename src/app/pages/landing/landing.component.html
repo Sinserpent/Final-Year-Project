@@ -1,0 +1,99 @@
+<div name="Main Page" class="bg-gray-100 overflow-x-hidden text-gray-900">
+
+    <section name="Hero Section" class="h-96 bg-gradient-to-b from-[#181818] to-black text-white flex flex-col justify-center items-center">
+        <h1 class="text-4xl text-center font-bold">Welcome to <span class="text-teal-400"> Talent Forge</span></h1>
+        <p class="mt-2 text-lg opacity-80">Your Tool For Success</p>
+    </section>
+
+    <section class="py-10 flex flex-col items-center bg-[#181818]">
+        <h2 class="text-2xl font-semibold text-center mb-6">How to Start</h2>
+
+
+
+        <div class="flex flex-col items-center gap-6 w-full mx-auto">
+          <app-card
+            *ngFor="let card of cards"
+            class="w-full mx-auto"
+            [title]="card.title"
+            [content]="card.content"
+            [icon]="card.icon">
+          </app-card>
+        </div>
+        <div class="text-blue-200">
+
+        </div>
+
+
+        <mat-slide-toggle></mat-slide-toggle>
+    </section>
+
+
+
+
+    <section name="Analyze Door" class="py-10 text-center">
+        <h1 class="text-3xl font-bold">Analyze</h1>
+        <p class="text-xl">Submit your Resume And Get Useful Insights</p>
+        <button routerLink="/analyze" class="bg-teal-900 h-10 text-white w-36 rounded-md my-10">Get Started</button>
+    </section>
+
+    <section name="Template Door" class="py-10 text-center">
+        <h1 class="text-3xl font-bold">Enhance</h1>
+        <p class="text-xl">Optimize Your Resume to Get Selected</p>
+        <button routerLink="/swapper" class="bg-teal-900 h-10 text-white w-36 rounded-md my-10">Get Started</button>
+    </section>
+
+    <section name="Interview Door" class="py-10 text-center">
+        <h1 class="text-3xl font-bold">Interview</h1>
+        <p class="text-xl">Prepare For Real Interviews with our mock AI interview</p>
+        <button routerLink="/interview" class="bg-teal-900 h-10 text-white w-36 rounded-md my-10">Get Started</button>
+    </section>
+
+    <section name="Connect Door" class="py-10 text-center">
+        <h1 class="text-3xl font-bold">Connect</h1>
+        <p class="text-xl">Get Together With Like Minded Induviduals</p>
+        <button routerLink="/connect" class="bg-teal-900 h-10 text-white w-36 rounded-md my-10">Get Started</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-white text-center py-6 mt-10">
+        <p>&copy; 2025 My Landing Page | All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
