@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment.prod';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ApiService } from '../../services/api/api.service';
@@ -5,7 +6,11 @@ import { CommonModule } from '@angular/common';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { ElementRef, ViewChild } from '@angular/core';
 
-const genAI = new GoogleGenerativeAI("AIzaSyAPVnQ6AineGDWKWNfUGuTCpuQ3DmGjPxw");
+
+
+const genAI = new GoogleGenerativeAI(environment.gemini_api);
+
+
 
 @Component({
 
