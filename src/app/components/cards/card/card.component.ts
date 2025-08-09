@@ -14,4 +14,5 @@ export class CardComponent {
   @Input() title!:string
   @Input() content!:string
   @Input() icon?:string='home'
+  @Input() route?:string
 }

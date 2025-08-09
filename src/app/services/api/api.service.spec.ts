@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SidebartoggleService } from './sidebartoggle.service';
+import { ApiService } from './api.service';
 
-describe('SidebartoggleService', () => {
-  let service: SidebartoggleService;
+describe('ApiService', () => {
+  let service: ApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SidebartoggleService);
+    service = TestBed.inject(ApiService);
   });
 
   it('should be created', () => {
